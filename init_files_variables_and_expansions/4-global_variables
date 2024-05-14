@@ -1,2 +1,2 @@
-#!/bin/bash
-declare -x | grep '^declare -x'
+#!/bin/bash 
+printenv
