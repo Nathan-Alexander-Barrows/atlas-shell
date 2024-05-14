@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p | grep '^declare' && env && declare -F
+set | grep '^(delcare|typeset|function)'
