@@ -2,9 +2,9 @@
 #this is a script that uses a while loop and the if, elif, and else statements to print Best School 10 times, on the 4th time it prints Bad luck and  on the 8th line it prints good luck
 counter=1
 while (( counter <= 10 )); do
-	if [[$counter -eq 4]]; then
+	if [[ $counter -eq 4 ]]; then
 	echo "Bad Luck"
-elif [[$counter -eq 8]]; then
+elif [[ $counter -eq 8 ]]; then
 	echo "Good Luck"
 else
 	echo "Best School"
