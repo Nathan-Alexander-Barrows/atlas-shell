@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-#this program tells the story of passwd
-while IFS=: read -r username password user_id group_id user_info home_dir shell;
-do
-echo "The user ${username} is part of the ${group_id} gang, lives in ${home_dir}
-and rides ${shell}. ${user_id}'s place is protected by the passcode ${password}, 
-more info about the user here: ${user_info}"
+#this program tells the atory of passwd
+while IFS=: read -r username password user_id group_id user_info home_dir shell; do
+  printf "The user %s is part of the %s gang, lives in %s and rides %s. %s's place is protected by the passcode %s, more info about the user here: %s\n" \
+    "$username" "$group_id" "$home_dir" "$shell" "$user_id" "$password" "$user_info"
 done < /etc/passwd
