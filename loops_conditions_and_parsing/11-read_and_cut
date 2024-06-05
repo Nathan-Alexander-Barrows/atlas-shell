@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+while IFS=: read -r username_user_id__home_dir_;
+doecho "${username}:${user_id}:${home_dir}"
+done
