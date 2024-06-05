@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+#this program displays the content of the file /etc/passwd 
+#only displaying username, user id, and home directory path for the user
 while IFS=: read -r username_user_id__home_dir_;
-doecho "${username}:${user_id}:${home_dir}"
-done
+do 
+echo "${username}:${user_id}:${home_dir}"
+done 
