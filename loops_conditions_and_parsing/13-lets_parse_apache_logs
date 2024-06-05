@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this is a application that parses files from apache
+awk '{print $1, $9}' apache-access.log
