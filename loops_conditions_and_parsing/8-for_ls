@@ -7,10 +7,9 @@
 
 for file in *; do
 
-if [[ $file == *_* ]];
+if [[ -f "$file" && "$file" != .* ]];
 then
-echo "${file#*_}"
-else
-echo "#file"
+	modified_name="${file#*-}"
+	echo "$modified_name"
 fi
 done
