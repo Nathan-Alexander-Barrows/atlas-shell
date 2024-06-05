@@ -1,4 +1,4 @@
-#!/bin/usr/env bash
+#!/usr/bin/env bash
 #this program tells the story of passwd
 while IFS=: ead -r username password user_id group_id user_info home_dir shell;
 do
